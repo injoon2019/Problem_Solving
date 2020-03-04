@@ -55,7 +55,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 
 2. Web
 	-Inflearn
-		
+		-9강 JSP 스크립트
 	-생활코딩(웹 어플리케이션 만들기)
 		16/102
 	
