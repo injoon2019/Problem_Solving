@@ -1,52 +1,57 @@
 //Baekjoon - 11054
+//https://sihyungyou.github.io/baekjoon-11054/
+//https://fbtmdwhd33.tistory.com/56
+import java.util.*;
 
-import java.io.*;
 public class BaekJoon11054 {
-	
-	public static void main(String[] args)throws Exception{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		int N = Integer.parseInt(br.readLine());
-		String[] strToken = br.readLine().split(" ");
-		int[] arr = new int[N];
-		int[][] dp = new int[2][N];
-		
-		for(int i=0;  i<N; i++) {
-			arr[i]= Integer.parseInt(strToken[i]);
+	static int n;
+
+	static int dp[][], cost[]; // 메모이제이션 배열을 2차원 배열로 선언하여 LIS, LDS를 수행
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		n = sc.nextInt();
+		dp = new int[2][n + 1];
+		cost = new int[n + 1];
+
+		for (int i = 1; i <= n; i++) {
+			cost[i] = sc.nextInt();
 		}
-		int increasing_max=0;
-		int decreasing_max=0;
-		int real_max=0;
-		boolean turned=false;
-		//dp[0][j] = j번째까지 감소하기 시작했을 때 가장 긴 바이토닉 수열의 길이
-		//dp[1][j] = j번째까지 증가할 때 가장 긴 바이토닉 수열의 길이
-		dp[0][0] = dp[1][0] = 1;
-		
-		for(int i=0; i<N; i++) {
-			increasing_max=0;
-			decreasing_max=0;
-			turned=false;
-			for(int j=0; j<N; j++) {
-				if(arr[j] <arr[i]) {
-					if(turned==false)
-						increasing_max = Math.max(increasing_max, dp[1][j]);
-				}
-				if(arr[j] > arr[i]) {
-					turned=true;
+
+		dp[1][n] = 1; // 오른쪽에서 시작하는 LIS
+		dp[0][1] = 1; // 왼쪽에서 시작하는 LIS
+		for (int i = n - 1; i > 0; i--) { // 오른쪽에서 시작하는 LIS
+			dp[1][i] = 1;
+			for (int j = n; j > i; j--) {
+				if (cost[i] > cost[j]) {
+					dp[1][i] = Math.max(dp[1][i], dp[1][j] + 1);
 				}
 			}
-			dp[0][i] = decreasing_max+1;
-			dp[1][i] = increasing_max+1;
 		}
-		
-		for(int i=0; i<N; i++) {
-			System.out.printf("%d ", dp[i]);
+
+		for (int i = 2; i <= n; i++) { // 왼쪽에서 시작하는 LIS
+			dp[0][i] = 1;
+			for (int j = 1; j < i; j++) {
+				if (cost[i] > cost[j]) {
+					dp[0][i] = Math.max(dp[0][i], dp[0][j] + 1);
+				}
+			}
 		}
-		
-		for(int i=0; i<N; i++) {
-			real_max = Math.max(real_max, dp[i]);
+		int max = Integer.MIN_VALUE;
+		for (int i = 1; i <= n; i++) { // 두 배열의 값들을 더해준다.
+			dp[0][i] += dp[1][i];
+
 		}
-		
-		System.out.println(real_max);
-	}	
+
+		for (int i = 1; i <= n; i++) {
+			if (dp[0][i] > max) {
+				max = dp[0][i];
+			}
+		}
+
+		System.out.println(max - 1); // 최댓값을 찾아 -1 해주면 정답
+
+	}
+
 }
