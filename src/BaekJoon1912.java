@@ -23,6 +23,10 @@ public class BaekJoon1912 {
 				dp[i] = dp[i-1]+arr[i];
 			}
 		}
+//		for(int i=1; i<N; i++) {
+//			dp[i] = Math.max(dp[i-1]+arr[i], arr[i]);
+//		}
+		
 		int max = dp[0];
 		for(int i=0; i<N; i++) {
 			max= Math.max(max, dp[i]);
