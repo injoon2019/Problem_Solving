@@ -3,7 +3,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+///https://jaimemin.tistory.com/459 <- 풀이법 깔끔! 나중에 꼭 다시 풀어봐라
 public class BaekJoon2011 {
 	public static void main(String[] args) throws IOException{
 		
