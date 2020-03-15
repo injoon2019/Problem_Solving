@@ -22,10 +22,6 @@ public class BaekJoon11052 {
 			}
 			dp[i]=max;
 		}
-		
-		for(int i=0;  i<=N; i++) {
-			System.out.printf("%d ", dp[i]);
-		}
 		System.out.println(dp[N]);
 	}	
 }
