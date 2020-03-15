@@ -48,6 +48,5 @@ public class BaekJoon10814 {
 		for(Person p: pArr) {
 			System.out.printf("%d %s\n", p.age, p.name);
 		}
-
 	}	
 }

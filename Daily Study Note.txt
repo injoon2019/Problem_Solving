@@ -58,7 +58,8 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 		form 데이터 처리 복습
 		JSP 스크립트 복습
 		JSP requets, response 복습
-		JSP 내장객체 학습
+		11. JSP 내장객체 학습
+		12. Servlet 데이터 공유
 	
 ===============================================================
 /* Mar 13, 2020 */
