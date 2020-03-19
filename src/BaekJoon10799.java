@@ -32,6 +32,5 @@ public class BaekJoon10799 {
 			}
 		}
 		System.out.println(count);
-
 	}
 }
