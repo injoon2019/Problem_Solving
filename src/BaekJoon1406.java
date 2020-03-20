@@ -14,10 +14,10 @@ public class BaekJoon1406 {
 		String str = br.readLine();
 		int M = Integer.parseInt(br.readLine());
 		String[] strToken;
-		LinkedList<Character> linkedlist = new LinkedList<>();
-		int index = str.length();
+		Stack<Character> left = new Stack<>();
+		Stack<Character> right = new Stack<>();
 		for(int i=0; i<str.length(); i++) {
-			linkedlist.add(str.charAt(i));
+			left.push(str.charAt(i));
 		}
 		String cmd;
 		StringBuilder sb = new StringBuilder();
@@ -26,30 +26,36 @@ public class BaekJoon1406 {
 			cmd = strToken[0];
 			switch(cmd) {
 				case "L":{
-					if(index>0)
-						index--;
+					if(!left.empty()) {
+						right.push(left.pop());
+					}
 						break;
 				}
 				case "D":{
-					if(index<linkedlist.size())
-						index++;
+					if(!right.empty()) {
+						left.push(right.pop());
+					}
 					break;
 				}
 				case "B":{
-					if(index>0)
-						linkedlist.remove(--index);
+					if(!left.empty()) {
+						left.pop();
+					}
 					break;
 				}
 				case "P":{
-					linkedlist.add(index, strToken[1].charAt(0));
-					index++;
+					left.push(strToken[1].charAt(0));
 					break;
 				}		
 			}
 		}
-		int size= linkedlist.size();
+		int size = left.size();
 		for(int i=0; i<size;  i++) {
-			sb.append(linkedlist.poll());
+			right.push(left.pop());
+		}
+		size = right.size();
+		for(int i=0; i<size; i++) {
+			sb.append(right.pop());
 		}
 		bw.append(sb);
 		bw.flush();
