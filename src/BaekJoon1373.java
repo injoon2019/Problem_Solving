@@ -3,30 +3,36 @@
 import java.io.*;
 import java.util.Arrays;
 public class BaekJoon1373 {
+	static StringBuilder answer = new StringBuilder();
+	static int[] pow = {1,2,4};
+	static int startI = 0;
+	static String inputs;
 	
 	public static void main(String[] args)throws Exception{
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str = br.readLine();
-		int length = str.length();
-		int start=0;
-		
-		if(length%3==1) {
-			System.out.printf("%d", str.charAt(0)-48);
-			start=1;
+		inputs = br.readLine();
+		String temp ;
+		int len = inputs.length();
+		if(len%3 ==1) {
+			cal(0,1);
+			startI +=1;
 		}
-		if(length%3==2) {
-			System.out.printf("%d",(str.charAt(0)-48)*2+str.charAt(1)-48);
-			start=2;
+		else if(len%3 ==2) {
+			cal(0,2);
+			startI +=2;
 		}
-		length%=3;
-		int check=0;
-		check +=length;
-		while(check<=str.length()) {
-			System.out.printf("%d", (str.charAt(start)-48)*4 + (str.charAt(start+1)-48)*2+ (str.charAt(start+2)-48));
-			start+=3;
-			check+=start;
+		for(int i=startI; i<len-1;  i+=3) {
+			cal(i,3);
+			
 		}
-		
+		System.out.println(answer);
 	}	
+	static void cal(int i, int len) {
+		int tempsum =0;
+		for(int j=0; j<len; j++) {
+			tempsum += (inputs.charAt(i+j)-'0')*pow[len-j-1];
+		}
+		answer.append(tempsum);
+	}
 }
