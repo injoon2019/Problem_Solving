@@ -34,7 +34,7 @@ public class BaekJoon6588 {
 				break;
 			for(int i=n-2; i>=3; i--) {
 				if(arr[i]==false&& arr[n-i]==false ) {
-					sb.append(n).append(" = ").append(i).append(" + ").append(n-i).append("\n");
+					sb.append(n).append(" = ").append(n-i).append(" + ").append(i).append("\n");
 					break;
 				}
 			}
