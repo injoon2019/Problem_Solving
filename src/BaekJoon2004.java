@@ -1,5 +1,5 @@
 //Baekjoon - 2004
-
+//https://www.geeksforgeeks.org/count-trailing-zeroes-factorial-number/
 import java.io.*;
 import java.util.Arrays;
 import java.util.Collections;
