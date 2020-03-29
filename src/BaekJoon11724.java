@@ -59,6 +59,4 @@ public class BaekJoon11724 {
 			}
 		}
 	}
-	
-
 }
