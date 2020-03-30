@@ -47,6 +47,8 @@ public class BaekJoon1707 {
 			}
 			
 			boolean bipartite = true;
+			//한번 DFS를 돌리고 전체 노드들에 대하여 방문하지 않은 노드가 있는지 검사하여 따로 list에 추가하였습니다.
+			//그리고 그 list에 있는 노드들에 대하여 또 DFS 를 돌려주었고 AC 받았습니다
 			for(int t=1; t<=V; t++) {
 				for(int j: list[t]) {
 					if(color[j]==color[t]) {
@@ -58,8 +60,6 @@ public class BaekJoon1707 {
 				System.out.println("YES");
 			else
 				System.out.println("NO");
-			
-			
 		}
 		sc.close();
 	}	
@@ -76,16 +76,4 @@ public class BaekJoon1707 {
 			}
 		}
 	}
-	
-//	private static boolean isBipartite(int V) {
-//		for(int i=1; i<=V; i++) {
-//			for(int y : list[i]) {
-//				if(color[y]==color[i]) {
-//					return false;
-//				}
-//			}
-//		}
-//		return true;
-//	}
-
 }
