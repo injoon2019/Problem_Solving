@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class BaekJoon9466 {
+public class BaekJoon2667 {
 	static int a[]; // 입력받는 배열
 	static int check[]; // 방문 check(시작에서부터 몇 번째로 방문하는 것인지)
 	static int startVertex[]; // 시작 정점
