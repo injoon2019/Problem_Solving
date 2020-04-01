@@ -1,44 +1,62 @@
-//Baekjoon - 9466
+//Baekjoon - 2667 단지 번호붙이기
 import java.io.*;
 import java.util.*;
 
 public class BaekJoon2667 {
-	static int a[]; // 입력받는 배열
-	static int check[]; // 방문 check(시작에서부터 몇 번째로 방문하는 것인지)
-	static int startVertex[]; // 시작 정점
-
-	static int dfs(int i, int cnt, int start) {
-		
-		if(check[i]!=0) {	//이미 방문했던 정점ㅇ이라면
-			if(start!=startVertex[i])	//시작 정점과 같지 않은지 확인
-				return 0;				//같지않다면 0 리턴
-			return cnt-check[i];		//같으면 몇 번째 방문한 정점인지 리턴
-		}
-		
-		check[i]= cnt;	//몇 번째 방문한건지 저장
-		startVertex[i] = start;
-		return dfs(a[i], cnt+1, start);	//가리키는 정점, +1번째 방문, start 그대로
-	}
+	static int[][] map;
+	static int N, cnt;
+	static int[][] visited;
+	static int dx[] = {-1,1,0,0};
+	static int dy[] = {0,0,-1,1};
+	
+	static ArrayList al = new ArrayList();
 	public static void main(String[] args) throws Exception {
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
+		Scanner scan = new Scanner(System.in);
 		
-		while(t-- >0) {
-			int n = sc.nextInt();
-			a = new int[n+1];
-			check = new int[n+1];
-			startVertex = new int[n+1];
-			
-			for(int i=1; i<=n; i++) {
-				a[i] = sc.nextInt();
+		N = scan.nextInt();
+		
+		map = new int[N][N];
+		visited = new int[N][N];
+		
+		for(int i=0; i<N; i++) {
+			String input = scan.next();
+			for(int j=0;  j<N; j++) {
+				map[i][j] = input.charAt(j)-'0';
 			}
-			
-			int ans = 0;
-			for(int i=1; i<=n; i++) {
-				if(check[i]==0)
-					ans+=dfs(i,1,i);
-			}
-			System.out.println(n-ans);
 		}
+		
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<N; j++) {
+				if(map[i][j]==1 && visited[i][j]==0) {
+					cnt=1;
+					find(i,j);
+					al.add(cnt);
+				}
+			}
+		}
+		
+		Collections.sort(al);
+		
+		System.out.println(al.size());
+		
+		for(int i=0; i<al.size(); i++)
+			System.out.println(al.get(i));
+	}
+	
+	static int find(int x ,int y) {
+		visited[x][y]=1;
+		
+		for(int i=0; i<4; i++) {
+			int nx = x+dx[i];
+			int ny = y+dy[i];
+			
+			if(nx>=0 && ny>=0 && nx<N && ny<N) {
+				if(map[nx][ny] ==1 && visited[nx][ny]==0) {
+					find(nx, ny);
+					cnt++;
+				}
+			}
+		}
+		return cnt;
 	}
 }
