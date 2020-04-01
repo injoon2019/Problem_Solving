@@ -50,7 +50,11 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 
 3. Java
 	-Inflearn (Java로 배우는 자료구조)
-				
+		제2-1장: 클래스, 객체, 참조변수
+			클래스, 객체, 참조변수1
+
+		제4-1장: 연결리스트의 개념과 기본연산
+			연결리스트의 개념과 기본연산 3	
 4.Web
 	Front-End Web UI Frameworks and Tools: Bootstrap 4 - 2주 차
 
