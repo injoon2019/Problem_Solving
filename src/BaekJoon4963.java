@@ -39,7 +39,6 @@ public class BaekJoon4963 {
 			}
 			System.out.println(cnt);
 		}
-		
 	}
 	
 	static void find(int y, int x) {
