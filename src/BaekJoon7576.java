@@ -12,7 +12,6 @@ public class BaekJoon7576 {
 	static int X, Y;
 	static boolean change = false;
 	
-	
 	public static void main(String[] args) throws Exception {		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String[] strToken = br.readLine().split(" ");
@@ -30,9 +29,7 @@ public class BaekJoon7576 {
 					allZero=false;
 			}
 		}
-
 		bfs();
-		
 	}
 	
 	static void bfs() {
@@ -75,13 +72,8 @@ public class BaekJoon7576 {
 			}
 		}
 		System.out.println(day-1);
-		
-		
 	}
-	
-
 }
-
 
 class DOT{
 	int x; 
