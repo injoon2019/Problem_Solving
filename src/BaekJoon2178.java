@@ -33,6 +33,9 @@ public class BaekJoon2178 {
 		visited[0][0]=1;
 		int ans = 1;
 		while(!queue.isEmpty()) {
+			/*bfs에서 깊이의 수를 세주면 됩니다. 약간의 테크닉이라고 할 수도 있는데, bfs를 도는 queue의 사이즈를 체크해서 그 사이즈 만큼 똑같은 bfs를 돌고나면
+			카운트를 하나씩 해주는 겁니다. 그리고 다시 똑같이 큐 사이즈 재고 위에서 했던 것을 반복합니다.
+			 */
 			int size = queue.size();
 			for(int s=0;  s<size; s++) {
 				DOT dot = queue.poll();
