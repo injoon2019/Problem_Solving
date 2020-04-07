@@ -1,85 +1,55 @@
-//Baekjoon - 2146
+//Baekjoon - 1991 트리 순회 
 import java.io.*;
 import java.util.*;
 
 public class BaekJoon1991 {
 
+	static Map<String, List<String>> map = new HashMap<>();
+	
+	private static void preorder(String v) {
+		if(v.equals(".")) return;
+		
+		System.out.print(v);
+		preorder(map.get(v).get(0));
+		preorder(map.get(v).get(1));
+	}
+	
+	private static void inorder(String v) {
+		if(v.equals(".")) return;
+		
+		inorder(map.get(v).get(0));
+		System.out.print(v);
+		inorder(map.get(v).get(1));
+	}
+	
+	private static void postorder(String v) {
+		if(v.equals(".")) return;
+		
+		postorder(map.get(v).get(0));
+		postorder(map.get(v).get(1));
+		System.out.print(v);
+	}
+	
+	
 	public static void main(String[] args) throws Exception {		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int n = Integer.parseInt(br.readLine());
-		Tree t = new Tree();
-		char data[];
-		for(int i=0; i<n; i++) {
-			data = br.readLine().replaceAll(" ", "").toCharArray();
-			t.add(data[0], data[1], data[2]);
-		}
-		t.preorder(t.root);
-		System.out.println();
-		t.inorder(t.root);
-		System.out.println();
-		t.postorder(t.root);
-	}
-}
-
-class Node{
-	char data;
-	Node left, right;
-	Node(char data){
-		this.data = data;
-	}
-}
-
-class Tree{
-	Node root;
-	public void add(char data, char leftData, char rightData) {
-		if(root==null) {
-			if(data != '.') {
-				root = new Node(data);
-			}
-			if(leftData != '.') {
-				root.left = new Node(leftData);
-			}
-			if(rightData != '.') {
-				root.right = new Node(rightData);
-			}
-		}
-		else search(root, data, leftData, rightData);
-	}
-	private void search(Node root, char data, char leftData, char rightData) {
-		if(root ==null) return;
 		
-		else if(root.data == data) {
-			if(leftData !='.') {
-				root.left = new Node(leftData);
-			}
-			if(rightData != '.') {
-				root.right = new Node(rightData);
-			}
+		for(int i=0; i<n; i++) {
+			String[] tmp = br.readLine().split("\\s");
+			List<String> list = new ArrayList<>();
+			
+			list.add(tmp[1]); list.add(tmp[2]);
+			map.put(tmp[0], list);
 		}
-		else {
-			search(root.left, data, leftData, rightData);
-			search(root.right, data, leftData, rightData);
-		}
-	}
-	
-	public void preorder(Node root) {
-		System.out.print(root.data);
-		if(root.left !=  null)	preorder(root.left);
-		if(root.right !=null ) preorder(root.right);
-	}
-	
-	public void inorder(Node root) {
-		if(root.left !=  null)	inorder(root.left);
-		System.out.print(root.data);
-		if(root.right !=null ) inorder(root.right);
-	}
-	
-	public void postorder(Node root) {
-		if(root.left !=  null)	postorder(root.left);
-		if(root.right !=null ) postorder(root.right);
-		System.out.print(root.data);
+		
+		preorder("A"); System.out.println();
+		inorder("A"); System.out.println();
+		postorder("A");
+
 	}
 }
+
 
 
