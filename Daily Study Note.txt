@@ -24,10 +24,10 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 10872, 1676, (2004*)
 
 @ 그래프(BFS, DFS)
-(1260*), 11724, (1707*), 10451, (2331*), (9466*), (2667*), 4963, (7576*), (2178*), (2146*), (1991*), (11725*),// 1167, 1967
+(1260*), 11724, (1707*), 10451, (2331*), (9466*), (2667*), 4963, (7576*), (2178*), (2146*), (1991*), (11725*), (1167*), 1967
 
 @ 이분탐색/삼분탐색 
-1654, 2805, 2110, 10815, 10816, 11662
+//1654, 2805, 2110, 10815, 10816, 11662
  
 @ 분할정복
 - DP랑 거의 똑같은데, 부분문제의 답을 DP 테이블에 저장할 필요가 없는 부분이 DP랑 다른 점이다.
@@ -43,7 +43,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 /* Apr 8, 2020 */
 1. Algorithm
 	- BaekJoon
-		
+		(1167*- 어렵당 ㅠ), (1967-1167과 거의 같은 문제), 
 			
 2. Operating System (이화여대 반효경)
 	7. Deadlocks
@@ -57,7 +57,10 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 4.Web
 	Front-End Web UI Frameworks and Tools: Bootstrap 4 - 2주 차
 		Assignment-finish
-		
+	Front-End Web UI Frameworks and Tools: Bootstrap 4 - 3주 차
+
+5. 일기
+	갈 길이 멀다. 하지만 조바심 내지말자. 장기전이니까. 		
 ===============================================================
 /* Apr 7, 2020 */
 1. Algorithm
