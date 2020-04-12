@@ -25,24 +25,22 @@ public class BaekJoon11728 {
 		}
 		int indexA = 0;
 		int indexB = 0;
-		for(int i=0; i<N+M; i++) {
-			
-			if(indexA<N && indexB <M) {
-				if(arrA[indexA] <= arrB[indexB]) {
-					merge[i] =arrA[indexA];
-					indexA++;
-				}
-				else {
-					merge[i] = arrB[indexB];
-					indexB++;
-				}
-			}else if (indexA >=N) {
-				merge[i]= arrB[indexB];
-				indexB++;
-			}else if (indexB >=M) {
-				merge[i]= arrA[indexA];
-				indexA++;
+		int indexC = 0;
+		while(indexA<N && indexB < M) {
+			if(arrA[indexA] < arrB[indexB]) {
+				merge[indexC++] = arrA[indexA++];
+			}else {
+				merge[indexC++] = arrB[indexB++];
 			}
+		}
+		//왼쪽에 데이터가 남은 경우
+		while(indexA < N) {
+			merge[indexC++] = arrA[indexA++];
+		}
+
+		//오른쪽에 데이터가 남은 경우
+		while(indexB < M) {
+			merge[indexC++] = arrB[indexB++];
 		}
 		
 		for(int i=0; i<N+M; i++) {
