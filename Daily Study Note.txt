@@ -31,7 +31,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
  
 @ 분할정복
 - DP랑 거의 똑같은데, 부분문제의 답을 DP 테이블에 저장할 필요가 없는 부분이 DP랑 다른 점이다.
-11728, (1780*),// 11729, 1992, 2447, 2448, 1517, 2261
+11728, (1780*), 11729, //1992, 2447, 2448, 1517, 2261
 
  @ 그리디
 11047, 2875, 10610, 1783, 1931, 11399, 2873, 1744
@@ -43,7 +43,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 /* Apr 12, 2020 */
 1. Algorithm
 	- BaekJoon
-				
+		(11729), 		
 	
 2. Operating System (이화여대 반효경)
 	8. Memory Management
