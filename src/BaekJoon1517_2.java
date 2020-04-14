@@ -2,33 +2,33 @@
 import java.io.*;
 import java.util.*;
 
-public class BaekJoon1517 {
+public class BaekJoon1517_2 {
 	
-	static long swapCount = 0;
-	static long[] sorted;
+	public static long[] arr;
+	public static long[] sorted;
+	public static long swapCount=0;
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		
-		int n = Integer.parseInt(br.readLine());
-		sorted = new long[n];
-		long[] arr = new long[n];
+		int N = Integer.parseInt(br.readLine());
+		arr = new long[N];
+		sorted = new long[N];
 		
-		st = new StringTokenizer(br.readLine());
-		for(int i=0; i<n; i++) {
+		st  = new StringTokenizer(br.readLine());
+		for(int i=0; i<N; i++) {
 			arr[i]= Integer.parseInt(st.nextToken());
 		}
 		
-		mergeSort(arr,0,n-1);
-		
-		System.out.println(swapCount);
+		mergeSort(arr, 0, N-1);
+		System.out.println(swapCount);		
 	}
 	
 	static void mergeSort(long[] arr, int low, int high) {
 		if(low<high) {
 			int mid = (low+high)/2;
-			mergeSort(arr, low, mid);
+			mergeSort(arr, low,mid);
 			mergeSort(arr, mid+1, high);
 			merge(arr, low, mid, high);
 		}
@@ -39,28 +39,25 @@ public class BaekJoon1517 {
 		int j = mid+1;
 		int index = low;
 		
-		while(i<=mid && j<= high) {
+		while(i<=mid && j<=high) {
 			if(arr[i]<= arr[j]) {
 				sorted[index++] = arr[i++];
-			}
-			else {
+			}else {
 				sorted[index++] = arr[j++];
-				//머지 소트를 이용하여 정렬을 하되, 
-				//앞의 숫자가 뒤의 숫자보가 큰 경우에 카운트를 해주면 동일하게 swap 횟수를 구할 수 있습니다.
-				
-				//swapCount에 (mid+1-i) 를 더하는 이유는 왼쪽 
-				//배열에 남아있는 숫자만큼 계속 swap이 발생하기 때문입니다.
-				swapCount += (mid+1 - i);
+				swapCount += (mid-i+1);
 			}
 		}
 		
-		while(i<=mid)
+		while(i<=mid) {
 			sorted[index++] = arr[i++];
+		}
 		
-		while(j<= high)
+		while(j<=high) {
 			sorted[index++] = arr[j++];
+		}
 		
-		for(int k=low; k<=high; k++)
-			arr[k]= sorted[k];
+		for(int k= low;  k<=high; k++) {
+			arr[k]= (int) sorted[k];
+		}
 	}
 }
