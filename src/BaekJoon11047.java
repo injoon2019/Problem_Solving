@@ -1,5 +1,4 @@
 //Baekjoon - 11047
-//https://dundung.tistory.com/52
 import java.io.*;
 import java.util.*;
 
@@ -18,13 +17,11 @@ public class BaekJoon11047 {
         }
         
         for(int i=arr.length-1; i>=0; i--) {
-        	if(amount> arr[i]) {
-        		int div = amount / arr[i];
-        		count += div;
+        	if(amount>= arr[i]) {
+        		count += amount / arr[i];
         		amount = amount % arr[i];
         	}
         }
         System.out.println(count);
     }
- 
 }

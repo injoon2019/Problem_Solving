@@ -3,6 +3,16 @@
 *그리디 탐색 기본동적 그래프류 중고급 동적프로그래밍
 ****/
 
+/*학습 소스
+* 운영체제: 이화여대 반효경 
+* 네트워크: 이화여대 이미정 http://www.kocw.net/home/search/kemView.do?kemId=1046412
+		http://www-net.cs.umass.edu/kurose-ross-ppt-6e/
+*
+* 데이터베이스 :
+	이화여대 용환승 http://kocw.net/home/search/kemView.do?kemId=1064626 
+	숭실대 이상호 http://www.kocw.net/home/cview.do?mty=p&kemId=1132753&ar=relateCourse
+/
+
 /*****
 https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
 @ 입출력
@@ -34,11 +44,37 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 11728, (1780*), 11729, (1992), (2447*), (2448*), (1517*), (2261??)
 
  @ 그리디
-11047,// 2875, 10610, 1783, 1931, 11399, 2873, 1744
+11047, 2875,// 10610, 1783, 1931, 11399, 2873, 1744
  
 @ 완전탐색
 1476, 1107, 1451, 9095, 10819, 10971, 1697, 1963, 9019, 1525, 2251, 2186, 3108, 5014, 1759, 2580
 , 1987, 6603, 1182, 2003, 1806, 1644, 1261, 1208, 7453, 2632, 2143
+===============================================================
+/* Apr 15, 2020 */
+1. Algorithm
+	- BaekJoon
+		
+	
+2. Operating System (이화여대 반효경)
+	8. Memory Management
+	
+3. Java
+	-Inflearn (영리한 프로그래밍을 위한 알고리즘 강좌)
+		섹션 2. 순환 (Recursion)
+				
+
+4.Web
+	Front-End Web UI Frameworks and Tools: Bootstrap 4 - 3주 차
+
+5.Network (이화여대 이미정)
+	1. Chapter 1: Roadmap
+		1. What is internet?
+		2. Network edge, Network core
+
+6. Database (이화여대 용환승)
+	1. 관계 대수와 SQL 
+	2. 관계 대수와 SQL
+		
 ===============================================================
 /* Apr 14, 2020 */
 1. Algorithm
