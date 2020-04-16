@@ -56,6 +56,28 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 		
 	
 2. Operating System (이화여대 반효경)
+		
+3. Java
+	-Inflearn (영리한 프로그래밍을 위한 알고리즘 강좌)
+				
+
+4.Web
+	Front-End Web UI Frameworks and Tools: Bootstrap 4 - 3주 차
+
+5.Network (이화여대 이미정)
+	1. Chapter 1: Roadmap
+
+
+6. Database (이화여대 용환승)
+	3. 관계 대수와 SQL
+		
+===============================================================
+/* Apr 15, 2020 */
+1. Algorithm
+	- BaekJoon
+		
+	
+2. Operating System (이화여대 반효경)
 	8. Memory Management
 	
 3. Java
