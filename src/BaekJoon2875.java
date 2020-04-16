@@ -11,23 +11,24 @@ public class BaekJoon2875 {
         int M = Integer.parseInt(strToken[1]);
         int K = Integer.parseInt(strToken[2]);
         
-        int[] arr = new int[K+1];
+        int ans = 0;
         
-        for(int i=0; i<=K; i++) {
-        	int tmp = (N-i)/2;
-        	int min =Math.min(tmp, (M-(K-i)));
-        	if(min>=0) {
-        		arr[i]=min;
+        while(K-- > 0) {
+        	if(getCount(N, true) >= getCount(M, false)) {
+        		N--;
+        	}else {
+        		M--;
         	}
         }
         
-        int max = 0;
-        for(int i=0; i<=K; i++) {
-        	if(arr[i]>max) {
-        		max = arr[i];
-        	}
-        }
-
-        System.out.println(max);
+        ans = N/2 <= M? N/2 : M;
+        System.out.println(ans);
+    }
+    
+    public static int getCount(int n, boolean female) {
+    	if(female) {
+    		n = n/2;
+    	}
+    	return n;
     }
 }

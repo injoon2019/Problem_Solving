@@ -4,7 +4,7 @@
 ****/
 
 /*학습 소스
-* 운영체제: 이화여대 반효경 
+* 운영체제: 이화여대 반효경 http://www.kocw.net/home/m/search/kemView.do?kemId=1046323&ar=pop
 * 네트워크: 이화여대 이미정 http://www.kocw.net/home/search/kemView.do?kemId=1046412
 		http://www-net.cs.umass.edu/kurose-ross-ppt-6e/
 *
@@ -65,7 +65,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 	Front-End Web UI Frameworks and Tools: Bootstrap 4 - 3주 차
 
 5.Network (이화여대 이미정)
-	1. Chapter 1: Roadmap
+	2. Chapter 1: Roadmap2
 
 
 6. Database (이화여대 용환승)
