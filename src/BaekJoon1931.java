@@ -19,13 +19,7 @@ public class BaekJoon1931 {
 					return -1;
 				}
 				else if (this.finish == o.finish) {
-					if(this.start< o.start) {
-						return -1;
-					}else if(this.start == o.start) {
-						return 0;
-					}else {
-						return 1;
-					}
+					return this.start-o.start;
 				}else {
 					return 1;
 				}
