@@ -1,4 +1,3 @@
-
 //Baekjoon - 1476
 import java.io.*;
 import java.util.*;
