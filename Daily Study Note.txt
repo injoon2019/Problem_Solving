@@ -63,7 +63,9 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 				
 4.Web
 	-Udemy
-	
+		섹션 1: Front-End Web Development
+		섹션 2: Introduction to HTML
+			15. How to Structure Text in HTML 절반정도 
 
 5.Network (이화여대 이미정)
 	6. Chapter : Application layer 1
