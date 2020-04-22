@@ -34,6 +34,8 @@ public class BaekJoon1744 {
         		max += Math.max(MINUS.get(i)*MINUS.get(i+1), MINUS.get(i)+MINUS.get(i+1));
         }
         System.out.println(max);
+        int a=1;
+        int b=0;
         
     }
 }
