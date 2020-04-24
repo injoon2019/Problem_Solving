@@ -40,10 +40,66 @@ public class BaekJoon1451 {
 				long b = getRectangleSum(i,j,0,m,rectangle);
 				long c = getRectangleSum(j,n,0,m,rectangle);
 				
+				long tmp = a*b*c;
+				
+				if(max<tmp)
+					max = tmp;
 			}
 		}
 		
+		for(int i=n-1; i>0; i--) {
+			long a = getRectangleSum(i,n,0,m,rectangle);
+			
+			for(int j=1; j<m; j++) {
+				long b = getRectangleSum(0,i,0,j,rectangle);
+				long c = getRectangleSum(0,i,j,m,rectangle);
+				
+				long tmp = a*b*c;
+				
+				if(max<tmp)
+					max=tmp;
+			}
+		}
 		
+		for(int i=1; i<m; i++) {
+			long a = getRectangleSum(0,n,0,i,rectangle);
+			
+			for(int j=1; j<n; j++) {
+				long b = getRectangleSum(0,j,i,m,rectangle);
+				long c = getRectangleSum(j,n,i,m,rectangle);
+				
+				long tmp = a*b*c;
+				
+				if(max<tmp)
+					max=tmp;
+			}
+			
+			for(int j=i+1;j<m;j++) {
+				long b = getRectangleSum(0,n,i,j,rectangle);
+				long c = getRectangleSum(0,n,j,m,rectangle);
+				
+				long tmp = a*b*c;
+				
+				if(max<tmp)
+					max = tmp;
+			}
+		}
+		
+		for(int i=m-1; i>0; i--) {
+			long a = getRectangleSum(0,n,i,m,rectangle);
+			
+			for(int j=1; j<n; j++) {
+				long b = getRectangleSum(0,j,0,i,rectangle);
+				long c = getRectangleSum(j,n,0,i,rectangle);
+				
+				long tmp = a*b*c;
+				
+				if(max<tmp)
+					max = tmp;
+			}
+		}
+		
+		System.out.println(max);
 	}
 	
 	public static long getRectangleSum(int sI, int eI, int sJ, int eJ, int[][] rectangle) {
