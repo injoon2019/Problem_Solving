@@ -13,6 +13,12 @@ public class BaekJoon10971 {
 		}
 		
 		for(int i=depth; i<n; i++) {
+			if(i<n-1) {
+				if(cost[arr[depth]][arr[depth+1]]==0) {
+					continue;
+				}
+			}
+
 			swap(arr, i, depth);
 			perm(arr, depth+1, n);
 			swap(arr, i, depth);
@@ -29,9 +35,6 @@ public class BaekJoon10971 {
 		int sum = 0;
 		for(int i=0; i<a.length-1; i++) {
 			sum += cost[a[i]][a[i+1]];
-			if(cost[a[i]][a[i+1]]==0) {
-				sum = Integer.MAX_VALUE;
-			}
 		}
 		if(cost[a.length-1][a[0]]==0) {
 			sum = Integer.MAX_VALUE;
@@ -66,3 +69,10 @@ public class BaekJoon10971 {
 		System.out.println(min);
 	}	
 }
+
+
+//4
+//0 0 10 10
+//10 0 3 10
+//10 10 0 3
+//3 10 10 0
