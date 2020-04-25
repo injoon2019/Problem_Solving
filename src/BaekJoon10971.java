@@ -1,78 +1,54 @@
 //Baekjoon - 10971 외판원 순회 2
+//https://whereisusb.tistory.com/136
 import java.io.*;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 public class BaekJoon10971 {
 
+	static int n;
+	static int[][] arr;
+	
 	static int min = Integer.MAX_VALUE;
-	static int[][] cost;
-	public static void perm(int[] arr, int depth, int n) {
-		if(depth==n) {
-			sum(arr);
-			return;
-		}
-		
-		for(int i=depth; i<n; i++) {
-			if(i<n-1) {
-				if(cost[arr[depth]][arr[depth+1]]==0) {
-					continue;
-				}
-			}
-
-			swap(arr, i, depth);
-			perm(arr, depth+1, n);
-			swap(arr, i, depth);
-		}
-	}
-	
-	static void swap(int[] a, int depth, int n) {
-		int temp = a[depth];
-		a[depth] = a[n];
-		a[n] = temp;
-	}
-	
-	static void sum(int[] a) {
-		int sum = 0;
-		for(int i=0; i<a.length-1; i++) {
-			sum += cost[a[i]][a[i+1]];
-		}
-		if(cost[a.length-1][a[0]]==0) {
-			sum = Integer.MAX_VALUE;
-		}else {
-			sum += cost[a[a.length-1]][a[0]];
-		}
-		if(sum < min) {
-			min = sum;
-		}
-	}
+	static int start = 0;
+	static boolean[] visited;
 	
 	public static void main(String[] args)throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
-		int N = Integer.parseInt(br.readLine());
-		String[] strToken;
-		
-		cost = new int[N][N];
-		for(int i=0; i<N; i++) {
-			strToken = br.readLine().split(" ");
-			for(int j=0; j<N; j++) {
-				cost[i][j] = Integer.parseInt(strToken[j]);
+		n = Integer.parseInt(br.readLine());
+		arr = new int[n][n];
+		for(int i=0; i<n; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			for(int j=0; j<n; j++) {
+				arr[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
-		
-		int[] arr = new int[N];
-		for(int i=0; i<N; i++) {
-			arr[i] = i;
+		visited= new boolean[n];
+		for(int i=0; i<n; i++) {
+			start = i;
+			solve(i,i,0,0);
 		}
-		perm(arr, 0, N);
 		System.out.println(min);
-	}	
+	}
+	
+	private static void solve(int x, int y, int cnt, int sum) {
+		//cnt와 n이 같고, y가 start이면 처음 시작한 곳으로 돌아오는 것
+		if(cnt==n && start ==y) {
+			min = Math.min(min,  sum);
+			return;
+		}
+		//도착한 y에서 이동
+		for(int i=0; i<n; i++) {
+			if(visited[i])
+				continue;
+			//y -> i로 갈 수 없는 경우 0 값을 가지고 있다
+			//따라서 y==i인 경우만 체크해주면 틀린 값을 얻게된다
+			if(arr[y][i]==0) continue;
+			if(sum+ arr[y][i]> min) continue;
+			visited[i] = true;
+			solve(y, i, cnt+1, sum+arr[y][i]);
+			visited[i] = false;
+		}
+	}
 }
 
-
-//4
-//0 0 10 10
-//10 0 3 10
-//10 10 0 3
-//3 10 10 0
