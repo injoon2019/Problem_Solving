@@ -45,6 +45,5 @@ public class BaekJoon1697 {
 		//0이 아닌 1에서 시작했으므로 
 		System.out.println(visit[m]-1);
 	}
-	
 }
 
