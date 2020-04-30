@@ -51,6 +51,5 @@ public class BaekJoon5014 {
 		}
 		System.out.println("use the stairs");
 	}
-
 }
 
