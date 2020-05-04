@@ -2,26 +2,30 @@
 import java.io.*;
 import java.util.*;
 
-public class Programmers64065 {
+public class Programmers64065_2 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String s = br.readLine();
 		int[] answer = {};
 		
-		s = s.substring(1,s.length()-1);
-		s = s.replaceAll("\\}\\,\\{", "#");
-		s = s.substring(1, s.length()-1);
+		s = s.substring(1, s.length()-1);	//1번 인덱스부터 s.length()-1 인덱스 전까지
+		s = s.replaceAll("\\}\\,\\{", "#");	//},{를 #으로 대체한다
+		s = s.substring(1, s.length()-1);	//남아있는 앞뒤의 마지막 괄호를 제거한다
 		
 		String[] arrS = s.split("#");
 		
+		//이제 문자열 크기가 가장 작은 것부터 순서대로 LinkedHashSet에 넣어준다
+		//문자열 크기가 가장 작은 대상을 기록한다
+		//TreeMap은 키의 값을 기준으로 정렬한다. 
+		//정렬 기준은 “숫자 > 알파벳 대문자 > 알파벳 소문자 > 한글” 
 		Map<Integer, Object> map = new TreeMap<>();
-		
-		for(int i=0; i<arrS.length; i++) {
+		for(int i=0;  i<arrS.length; i++) {
 			String[] tuple = arrS[i].split(",");
 			map.put(tuple.length, tuple);
 		}
 		
 		Iterator mapItr = map.keySet().iterator();
+		
 		Set<Integer> set = new LinkedHashSet<>();
 		
 		while(mapItr.hasNext()) {
@@ -34,7 +38,7 @@ public class Programmers64065 {
 		}
 		
 		answer = new int[set.size()];
-		
+
 		Iterator setItr = set.iterator();
 		int index = 0;
 		
@@ -42,6 +46,7 @@ public class Programmers64065 {
 			answer[index] = (int)setItr.next();
 			index++;
 		}
-		System.out.println(answer);
-	}
+		
+		System.out.println(s);
+	}	
 }
