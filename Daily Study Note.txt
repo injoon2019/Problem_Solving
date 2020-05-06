@@ -64,6 +64,8 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 6. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
 		섹션 4: Installing MySQL and getting acquainted with the interface
+		섹션 5: First steps in SQL
+		섹션 6: MySQL constraints
 
 	(이화여대 용환승)	
 		
