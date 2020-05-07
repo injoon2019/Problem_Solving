@@ -1,4 +1,4 @@
-//Baekjoon - 1261 알고스팟
+//Baekjoon - 1261 알고스팟 (다익스트라)
 import java.io.*;
 import java.util.*;
 
@@ -16,12 +16,14 @@ public class BaekJoon1261 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String[] strToken = br.readLine().split(" ");
-		R = Integer.parseInt(strToken[0]);
-		C = Integer.parseInt(strToken[1]);
+		C = Integer.parseInt(strToken[0]);	//N
+		R = Integer.parseInt(strToken[1]);	//M
+		
 		
 		map = new int[R][C];
 		dist = new int[R][C];
 		
+		//input 받으며 dist에는 무한값 저장
 		for(int i=0; i<R; i++) {
 			String str = br.readLine();
 			for(int j=0; j<C; j++) {
@@ -32,12 +34,11 @@ public class BaekJoon1261 {
 		
 		pq = new PriorityQueue<>();
 		bfs();
-		System.out.println(result);	
+		System.out.println(result);
 	}
 	
 	public static void bfs() {
-		
-		//첫 번째 시작 값 add
+		//첫 번째 시작 값
 		pq.add(new Spot(0,0,0));
 		dist[0][0] = 0;
 		
@@ -46,47 +47,40 @@ public class BaekJoon1261 {
 			Spot s = pq.poll();
 			
 			//끝까지 도착하면 가중치 값 가지고 return
-//			if(s.y == R-1 && s.x == C-1) {
-//				result = s.cost;
-//				return;
-//			}
+			if(s.y == R-1 && s.x == C-1) {
+				result = s.cost;
+				return;
+			}
 			
 			for(int i=0; i<4; i++) {
 				int ny = s.y + dy[i];
 				int nx = s.x + dx[i];
 				
 				if(ny>=0 && nx>=0 && ny<R && nx<C) {
-					if(dist[ny][nx] > dist[s.y][s.x]+ map[ny][nx]) {
+					
+					if(dist[ny][nx] > dist[s.y][s.x]+map[ny][nx]) {
 						dist[ny][nx] = dist[s.y][s.x] + map[ny][nx];
-						
-						if(ny==R-1 && nx == C-1) {
-							result = dist[ny][nx];
-							return;
-						}else {
-							pq.add(new Spot(ny, nx, dist[ny][nx]));
-						}
+						pq.add(new Spot(ny,nx, dist[ny][nx]));
 					}
 				}
 			}
 		}
-		
 	}
+	
 }
 
 class Spot implements Comparable<Spot>{
-	int y;
-	int x;
-	int cost;
-	
+	int y, x , cost;
 	public Spot(int y, int x, int cost) {
 		this.y = y;
-		this.x  =x;
+		this.x= x;
 		this.cost = cost;
 	}
 	
 	@Override
 	public int compareTo(Spot o) {
-		return this.cost < o.cost ? -1:1;
+		return this.cost < o.cost ? -1 : 1;
 	}
 }
+
 

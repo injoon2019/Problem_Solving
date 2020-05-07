@@ -41,7 +41,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 11047, 2875, 10610, (1783*), (1931), 11399, (2873*), 1744
 @ 완전탐색
 1476, (1107*), (1451*), (9095*), (10819**), (10971*), (1697*), (1963*), (9019*), (1525**), (2251*), (2186*), (5014), (6603*), (1759), (2580*), 
-1987, (1182*), 2003, (1806*), (1644),// 1261, 1208, 7453, 2632, 2143, 3108,
+1987, (1182*), 2003, (1806*), (1644), (1261*),// 1208, 7453, 2632, 2143, 3108,
 
 =========================
 알고리즘 스터디: 17144//, 
@@ -50,12 +50,12 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 ===============================================================
 /* May 7, 2020 */
 1. Algorithm
-			
+		BaekJoon: (1261*-다익스트라?), 	
 2. Operating System (이화여대 반효경)
 
 3. Java
 	-Inflearn (영리한 프로그래밍을 위한 알고리즘 강좌)
-			
+			[알고리즘] 제6-4강 힙(heap)의 다른 응용: 우선순위 큐 (priority queue)
 4.Web
 	-Udemy
 		
@@ -63,7 +63,8 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 	
 6. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
-		
+		섹션 9: SQL SELECT statement
+		섹션 10: SQL INSERT statement
 
 	(이화여대 용환승)	
 		
