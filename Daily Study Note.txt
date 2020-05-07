@@ -48,7 +48,7 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 =========================
 카카오 인턴 대비: 2019 카카오 개발자 겨울 인턴십: 크레인 인형뽑기 게임, (튜플**), (불량사용자**), 
 ===============================================================
-/* May 6, 2020 */
+/* May 7, 2020 */
 1. Algorithm
 			
 2. Operating System (이화여대 반효경)
@@ -63,9 +63,32 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 	
 6. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
+		
+
+	(이화여대 용환승)	
+		
+===============================================================
+/* May 6, 2020 */
+1. Algorithm
+			
+2. Operating System (이화여대 반효경)
+
+3. Java
+	-Inflearn (영리한 프로그래밍을 위한 알고리즘 강좌)
+			[알고리즘] 제6-1강 힙 정렬(heap sort) 1
+			[알고리즘] 제6-1강 힙 정렬(heap sort) 2
+4.Web
+	-Udemy
+		
+5.Network (이화여대 이미정)		
+	
+6. Database 
+	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
 		섹션 4: Installing MySQL and getting acquainted with the interface
 		섹션 5: First steps in SQL
 		섹션 6: MySQL constraints
+		섹션 7: SQL best practices
+		섹션 8: Loading the 'employees' database
 
 	(이화여대 용환승)	
 		
