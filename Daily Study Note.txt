@@ -63,8 +63,6 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 	
 6. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
-		섹션 11: SQL UPDATE Statement
-		섹션 12: SQL DELETE Statement
 		섹션 13: MySQL - Aggregate functions
 	
 	(이화여대 용환승)	
