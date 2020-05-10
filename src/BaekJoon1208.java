@@ -1,7 +1,11 @@
-//Baekjoon - 1208 부분수열의 합 2
+//Baekjoon - 1208 부분수열의 합 2 (투포인터)
 import java.io.*;
 import java.util.*;
 
+/*이 문제는 이전에 풀어본 부분수열의 합(1182번) 전략으로는 풀이하기 힘들다. 
+ * N의 개수가 40까지 이르게 되면 2^40은 아주 큰 숫자가 되기때문에 시간초과가 발생하게 되기 때문이다.
+ *  때문에 2^20의 시간복잡도를 갖는 두개의 배열을 만들어서 풀이하는 전략을 이용해야한다.
+ * */
 public class BaekJoon1208 {
 	
 	static ArrayList<Integer> A, B;
