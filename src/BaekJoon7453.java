@@ -1,4 +1,4 @@
-//Baekjoon - 7453 합이 0인 네 정수
+//Baekjoon - 7453 합이 0인 네 정수 (투 포인터)
 import java.io.*;
 import java.util.*;
 
@@ -6,18 +6,19 @@ public class BaekJoon7453 {
 	static int[] A,B,C,D;
 	
 	public static void main(String[] args) throws Exception {		
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
 		A = new int[n];
 		B = new int[n];
 		C = new int[n];
 		D = new int[n];
 		
 		for(int i=0; i<n; i++) {
-			A[i] = sc.nextInt();
-			B[i] = sc.nextInt();
-			C[i] = sc.nextInt();
-			D[i] = sc.nextInt();
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			A[i] = Integer.parseInt(st.nextToken());
+			B[i] = Integer.parseInt(st.nextToken());
+			C[i] = Integer.parseInt(st.nextToken());
+			D[i] = Integer.parseInt(st.nextToken());
 		}
 		
 		int[] subsetAB = getSubset(n, A, B);
@@ -36,25 +37,25 @@ public class BaekJoon7453 {
 			int tmp = leftVal + rightVal;
 			
 			if(tmp<0) {
-				while(left < n*n && subsetAB[left]== leftVal) {
-					left++;
+				while(++left < n*n && subsetAB[left]== leftVal) {
+					//left++;
 				}
 			}else if (tmp > 0 ) {
-				while(right >=0 && subsetCD[right]==rightVal) {
-					right--;
+				while(--right >=0 && subsetCD[right]==rightVal) {
+					//right--;
 				}
 			}else {
 				long leftCnt = 1;
 				long rightCnt = 1;
 				
-				while(left < n*n && subsetAB[left]==leftVal) {
-					left++;
+				while(++left < n*n && subsetAB[left]==leftVal) {
+					//left++;
 					leftCnt++;
 				}
 				
-				while(right>=0 && subsetCD[right]== rightVal) {
+				while(--right>=0 && subsetCD[right]== rightVal) {
 					rightCnt++;
-					right--;
+					//right--;
 				}
 				cnt += leftCnt * rightCnt;
 			}
