@@ -48,6 +48,26 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 =========================
 카카오 인턴 대비: 2019 카카오 개발자 겨울 인턴십: 크레인 인형뽑기 게임, (튜플**), (불량사용자**), 
 ===============================================================
+/* May 11, 2020 */
+1. Algorithm
+		BaekJoon: 
+2. Operating System (이화여대 반효경)
+
+3. Java
+	-Inflearn (영리한 프로그래밍을 위한 알고리즘 강좌)
+			
+4.Web
+	-Udemy
+		
+5.Network (이화여대 이미정)		
+	
+6. Database 
+	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
+	
+	
+	(이화여대 용환승)	
+		
+===============================================================
 /* May 10, 2020 */
 1. Algorithm
 		BaekJoon: 
