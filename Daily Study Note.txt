@@ -64,8 +64,13 @@ https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%
 6. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
 		
+7. SFU LECTURE
+	1. CMPT 353 
+		1. CMPT 353, week 1 part 1
+		2. CMPT 353, week 1 part 2
+	2. CMPT 310
+		1. 310 Online Lecture / recording_1
 	
-	(이화여대 용환승)	
 		
 ===============================================================
 /* May 12, 2020 */
