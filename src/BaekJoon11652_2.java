@@ -15,23 +15,42 @@ public class BaekJoon11652_2 {
 			arr[i] = Long.parseLong(br.readLine());
 		}
 		Arrays.parallelSort(arr);
-		int max = Integer.MIN_VALUE;
-		int ansIndex = 0;
-		long prev = Integer.MIN_VALUE;
-		int curCount = 1;
-		for(int i=0; i<N; i++) {
-			if(arr[i]==prev) {
-				curCount++;
-			}else {
-				prev = arr[i];
-				if(curCount>max) {
-					max = curCount;
-					ansIndex = i;
+		long prev = arr[0];
+		long maxCount = 0;
+		long curCount = 1;
+		int maxIndex = 0;
+		for(int i=1; i<N; i++) {
+			if(i==N-1) {
+				//다르면
+				if(arr[i]!=prev) {
+					if(curCount > maxCount) {
+						maxCount = curCount;
+						maxIndex = i-1;
+					}
+				}
+				//같으면
+				else {
+					curCount++;
+					if(curCount > maxCount) {
+						maxCount = curCount;
+						maxIndex = i-1;
+					}
+				}
+			}
+			//다른 숫자가 나왔다면
+			else if(arr[i]!= prev) {
+				//maxCount랑 curCount 비교
+				if(curCount > maxCount) {
+					maxCount = curCount;
+					maxIndex = i-1;
 				}
 				curCount = 1;
+				prev = arr[i];
+			}else {
+				curCount++;
 			}
 		}
-		System.out.println(arr[ansIndex]);
+		System.out.println(arr[maxIndex]);
 	}
 
 
