@@ -50,6 +50,12 @@
 7. SFU LECTURE
 	1.CMPT 353
 		CMPT 353, week 2 part 1
+
+8. Python
+	1. Coursera - Python for Everybody
+		1. Programming for Everybody
+		2. Python Data Strucrues
+			1.Week 3 done
 		
 ===============================================================
 /* May 19, 2020 */
