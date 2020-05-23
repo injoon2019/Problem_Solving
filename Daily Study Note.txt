@@ -30,6 +30,32 @@
 =========================
 카카오 인턴 대비: 2019 카카오 개발자 겨울 인턴십: 크레인 인형뽑기 게임, (튜플**), (불량사용자**), 
 ===============================================================
+/* May 23, 2020 */
+1. Algorithm
+	BaekJoon: 
+2.Web
+	-Udemy		
+	
+3. Database 
+	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
+		
+		
+4. SFU LECTURE
+	1.CMPT 310
+		
+	2.CMPT 353
+		
+	
+5. Python
+	1. Coursera - Python for Everybody
+		3.Using Python to Access Web Data
+			
+	
+6. 인공지능 사관학교
+
+7. KPMG로부터 인턴 합격 소식 받음! 문제는 비자..
+   일단 한가지 옵션이 더 늘은 것이니 조금만 더 기다려 보자. 
+===============================================================
 /* May 22, 2020 */
 1. Algorithm
 	BaekJoon: 
