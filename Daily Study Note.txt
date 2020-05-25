@@ -47,6 +47,35 @@
 		
 	
 5. Python
+	1. Coursera - Python for Everybod
+	
+6. 인공지능 사관학교
+
+7. 해야할 일
+	1. CMPT 310 강의 듣기
+	2. CMPT 353, 310 과제 시작하기
+	3. 파이썬 공부
+	4. 알고리즘 공부
+	5. SQL 공부 
+	6. 웹 공부
+===============================================================
+/* May 24, 2020 */
+1. Algorithm
+	BaekJoon: 
+2.Web
+	-Udemy		
+	
+3. Database 
+	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
+		
+		
+4. SFU LECTURE
+	1.CMPT 310
+		
+	2.CMPT 353
+		
+	
+5. Python
 	1. Coursera - Python for Everybody
 		3.Using Python to Access Web Data
 			
