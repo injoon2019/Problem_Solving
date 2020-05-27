@@ -38,7 +38,7 @@
 	
 3. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
-		
+		FINISH!
 		
 4. SFU LECTURE
 	1.CMPT 310
@@ -56,9 +56,8 @@
 
 7. 해야할 일
 	1. 310 과제 
-	4. 알고리즘 공부
-	5. SQL 공부 
-	6. 웹 공부
+	2. 알고리즘 공부
+	3. 웹 공부
 ===============================================================
 /* May 26, 2020 */
 1. Algorithm
@@ -125,7 +124,7 @@
 	
 3. Database 
 	1. Udemy - SQL - MySQL for Data Analytics and Business Intelligence
-		
+		Section 22: Combining SQL and Tableau - Task2
 		
 4. SFU LECTURE
 	1.CMPT 310
