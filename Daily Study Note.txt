@@ -50,10 +50,12 @@
 	1. Utube - Nadocoding
 		1. Basic Done
 	
+	2. CMPT 353 Exercise 2 Done. 
+	
 6. 인공지능 사관학교
 
 7. 해야할 일
-	1. CMPT 353, 310 과제 
+	1. 310 과제 
 	4. 알고리즘 공부
 	5. SQL 공부 
 	6. 웹 공부
