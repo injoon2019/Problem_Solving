@@ -44,7 +44,8 @@
 	
 4. Python
 	1. Utube - Nadocoding
-		 
+		 1. Application- Game
+			1. Section 8: Frame- Done
 	
 5. 인공지능 사관학교
 	
