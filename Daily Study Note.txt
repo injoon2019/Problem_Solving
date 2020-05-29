@@ -39,8 +39,11 @@
 		
 3. SFU LECTURE
 	1.CMPT 310
+		Assignment almost done. 
 		
-	2.CMPT 353		
+	2.CMPT 353
+		Week 3 lecture 2 Done
+		
 	
 4. Python
 	1. Utube - Nadocoding
@@ -48,10 +51,10 @@
 			1. Section 8: Frame- Done
 	
 5. 인공지능 사관학교
+
 	
 6. 해야할 일
 	1. 310 과제
-	2. CMPT 353 Week 3 - part2 
 	3. CMPT 310- Online lecture 7
 	4. CMPT 454 - Wednesday Class Activity / recording 1 
 	2. 알고리즘 공부
