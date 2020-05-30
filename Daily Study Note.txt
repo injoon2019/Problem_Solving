@@ -42,7 +42,8 @@
 		1. Assignment Done. 
 		
 	2.CMPT 454
-		
+		1. cmpt454_07indexes
+		2. CMPT 454 Week3 Quiz Done 
 	
 4. Python
 	1. Utube - Nadocoding
