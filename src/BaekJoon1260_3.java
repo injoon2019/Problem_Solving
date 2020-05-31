@@ -8,8 +8,8 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class BaekJoon1260_2 {
-	static int N, M, V;
+public class BaekJoon1260_3 {
+	static int N,M,V;
 	static ArrayList<Integer>[] list;
 	static boolean[] check;
 	
@@ -18,23 +18,20 @@ public class BaekJoon1260_2 {
 		N = sc.nextInt();
 		M = sc.nextInt();
 		V = sc.nextInt();
-		
-		list = new ArrayList[N+1];
 		check = new boolean[N+1];
+		list = new ArrayList[N+1];
 		for(int i=1; i<=N; i++) {
-			list[i] = new ArrayList<Integer>();
+			list[i]= new ArrayList<>();
 		}
-		for(int i=0; i<M; i++) {
+		for(int i=1; i<=M; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			list[a].add(b);
 			list[b].add(a);
 		}
-		
 		for(int i=1; i<=N; i++) {
 			Collections.sort(list[i]);
 		}
-		
 		DFS(V);
 		System.out.println();
 		check = new boolean[N+1];
@@ -43,15 +40,13 @@ public class BaekJoon1260_2 {
 	}	
 	
 	public static void DFS(int start) {
-		if(check[start]==true) {
+		if (check[start]) {
 			return;
 		}
-		check[start]=true;
 		System.out.print(start+" ");
+		check[start]=true;
 		for(int i : list[start]) {
-			if (check[i]==false) {
-				DFS(i);
-			}
+			DFS(i);
 		}
 		
 	}
@@ -60,15 +55,19 @@ public class BaekJoon1260_2 {
 		Queue<Integer> queue = new LinkedList<>();
 		queue.add(V);
 		check[V]=true;
+		System.out.print(V+" ");
 		while(!queue.isEmpty()) {
-			int x = queue.remove();
-			System.out.print(x+" ");
-			for(int i: list[x]) {
+			int v = queue.poll();
+			
+			for(int i : list[v]) {
 				if(check[i]==false) {
-					queue.add(i);
 					check[i]=true;
+					queue.add(i);
+					System.out.print(i+" ");
 				}
 			}
+			
 		}
 	}
+
 }
