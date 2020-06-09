@@ -37,7 +37,7 @@
 		섹션 13: Advanced Javascript and DOM Manipulation		
 3. SFU LECTURE
 	1.CMPT 310		 
-
+		1. 310 Online Lecture / recording_12
 	2.CMPT 454
 		1. cmpt454_10 hash review for mideterm
 		2. 
