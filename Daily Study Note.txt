@@ -42,14 +42,14 @@
 		1. Took midterm1
 
 	3.CMPT 353
-		
+		1. CMPT 353, week 5 part 1
 4. Python
 	1. Utube - Nadocoding
 		 	
 5. 인공지능 사관학교
 	
 6. 해야할 일
-	2. CMPT 353 Quiz
+	2. CMPT 353 Quiz (1,2,3,4,5,6,7)
 	3. CMPT 353 exercise
 	4. CMPT 310 Assignment
 	3. 광주 ai 과제
