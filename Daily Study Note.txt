@@ -37,6 +37,30 @@
 		섹션 13: Advanced Javascript and DOM Manipulation		
 3. SFU LECTURE
 	1.CMPT 310		 
+		
+	2.CMPT 454 
+
+	3.CMPT 353
+		
+4. Python
+	1. Utube - Nadocoding
+		 	
+5. 인공지능 사관학교
+	
+6. 해야할 일
+	4. CMPT 310 Assignment
+	3. 광주 ai 과제
+	2. 알고리즘 공부
+	3. 웹 공부
+====================================================
+/* June 12, 2020 */
+1. Algorithm
+	 	
+2.Web
+	-Udemy			
+		섹션 13: Advanced Javascript and DOM Manipulation		
+3. SFU LECTURE
+	1.CMPT 310		 
 		2. Took quiz 2
 	2.CMPT 454 
 		1. Took midterm1
