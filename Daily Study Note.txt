@@ -38,16 +38,23 @@
 3. SFU LECTURE
 	1.CMPT 310		 
 		1. Took Quiz 2	
+		2. 310 Online Lecture / recording_16
 	2.CMPT 454 
 		
 	3.CMPT 353
-			
+		1. CMPT 353, week 6 part 2		
 4. Python
 	1. Utube - Nadocoding
 		 	
 5. 인공지능 사관학교
-			
+	1. 1차합격		
 6. 해야할 일
+	0. 광주 인공지능 복습
+	0. cmpt 353 week 6 lecture
+	0. cmpt 454 assginment 1
+	1. cmpt 454 report1 
+	2. cmpt 353 exercise
+	3.cmpt 310 assignment 3
 	2. 알고리즘 공부
 	3. 웹 공부
 ====================================================
