@@ -29,6 +29,33 @@
 =========================
 카카오 인턴 대비: 2019 카카오 개발자 겨울 인턴십: 크레인 인형뽑기 게임, (튜플**), (불량사용자**), 
 ===============================================================
+/* June 20, 2020 */
+1. Algorithm
+	 	
+2.Web
+	-Udemy			
+		섹션 13: Advanced Javascript and DOM Manipulation		
+3. SFU LECTURE
+	1.CMPT 310		 
+		
+	2.CMPT 454 
+		
+	3.CMPT 353
+		1. Exercise 5	
+4. Python
+	1. Utube - Nadocoding
+		 	
+5. 인공지능 사관학교
+		
+6. 해야할 일
+	0. 광주 인공지능 복습
+	0. cmpt 353 week 6 lecture
+	0. cmpt 454 assginment 1
+	1. cmpt 454 report1 
+	3.cmpt 310 assignment 3
+	2. 알고리즘 공부
+	3. 웹 공부
+====================================================
 /* June 19, 2020 */
 1. Algorithm
 	 	
