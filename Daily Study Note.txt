@@ -37,9 +37,10 @@
 		섹션 13: Advanced Javascript and DOM Manipulation		
 3. SFU LECTURE
 	1.CMPT 310		 
-		
+		1. 310 Online Lecture / recording_18	
 	2.CMPT 454 
-		0. 	
+		0. Review cmpt454_09B+2
+		1.  	
 	3.CMPT 353
 	
 4. Python
