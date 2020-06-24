@@ -39,15 +39,16 @@
 	1.CMPT 310		 
 		1. 	
 	2.CMPT 454 
-		0. 	
+		1. cmpt454_11other_indexes 	
 	3.CMPT 353
 	
 4. Python
 	1. Utube - Nadocoding
 		 	
 5. 인공지능 사관학교
-	
+	1. 합격
 6. 해야할 일
+	0. cmpt 310 quiz
 	0. cmpt 454 assginment 2
 	3.cmpt 310 assignment 3
 	2. 알고리즘 공부
