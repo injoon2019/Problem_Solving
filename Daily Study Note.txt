@@ -42,6 +42,7 @@
 		
 	3.CMPT 353
 		1. CMPT 353, week 7 part 1
+		2. CMPT 353, week 7 part 2
 4. Python
 	1. Utube - Nadocoding
 		 	
