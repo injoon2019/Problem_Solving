@@ -40,9 +40,11 @@
 		1. 310 Online Lecture / recording_20
 		2. 310 Online Lecture / recording_21		
 	2.CMPT 454 
-		1. cmpt454_13qe_sorting	
+		1. cmpt454_14qe_projections	
+		2. cmpt454_15qe_joins
 	3.CMPT 353
-		
+		1. CMPT 353, week 8 part 1
+		2. CMPT 353, week 8 part 2
 4. Python
 	1. Utube - Nadocoding
 		 	
