@@ -37,11 +37,13 @@
 			
 3. SFU LECTURE
 	1.CMPT 310		 
-				
+		1. assignment 3 (70%)	
 	2.CMPT 454 
 		
 	3.CMPT 353
-		
+		1. Took CMPT 353 Quiz 3
+		1. Review CMPT 353, week 7 part 1
+		2. Review CMPT 353, week 7 part 2
 4. Python
 	1. Utube - Nadocoding
 		 	
