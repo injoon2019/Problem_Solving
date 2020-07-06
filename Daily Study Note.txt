@@ -29,7 +29,30 @@
 =========================
 카카오 인턴 대비: 2019 카카오 개발자 겨울 인턴십: 크레인 인형뽑기 게임, (튜플**), (불량사용자**), 
 ===============================================================
-/* July 3, 2020 */
+/* July 6, 2020 */
+1. Algorithm
+	 	
+2.Web
+	-Udemy			
+			
+3. SFU LECTURE
+	1.CMPT 310		 
+		1. Assignment 3 Done
+	2.CMPT 454 
+		
+	3.CMPT 353
+		
+4. Python
+	1. Utube - Nadocoding
+		 	
+5. 인공지능 사관학교
+	1. 오리엔테이션 및 파이썬 기초 
+6. 해야할 일
+	1. cmpt 454 assignment 3
+	2. 알고리즘 공부
+	3. 웹 공부
+====================================================
+/* July 4, 2020 */
 1. Algorithm
 	 	
 2.Web
@@ -39,7 +62,32 @@
 	1.CMPT 310		 
 		
 	2.CMPT 454 
+		1. 310 Online Lecture / recording_22
+	3.CMPT 353
 		
+4. Python
+	1. Utube - Nadocoding
+		 	
+5. 인공지능 사관학교
+	
+6. 해야할 일
+	1. cmpt 454 assignment 3
+	3.cmpt 310 assignment 3
+	2. 알고리즘 공부
+	3. 웹 공부
+====================================================
+/* July 4, 2020 */
+1. Algorithm
+	 	
+2.Web
+	-Udemy			
+			
+3. SFU LECTURE
+	1.CMPT 310		 
+		
+	2.CMPT 454 
+		1. cmpt454_16parsing	
+		2. cmpt454_17plans
 	3.CMPT 353
 		1. Exercie 7
 4. Python
