@@ -42,6 +42,8 @@
 		1. Review cmpt454_16parsing
 		2. Review cmpt454_17plans
 		3. cmpt454_18estimates
+		4. cmpt454_19join_order
+		5. cmpt454_20plan_selection
 	3.CMPT 353
 		
 4. Python
